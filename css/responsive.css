@@ -1,0 +1,116 @@
+@media screen and (max-width:1179px) {
+    .ft__container__first {
+        grid-template-areas: 
+            "ft_subs    ft_subs     ft_subs     ft_subs"
+            "ft_rrss    ft_rrss     ft_rrss     ft_rrss"
+            "ft_logo    ft_logo     ft_policy1  ft_policy1"
+            "ft_info    ft_info     ft_policy2  ft_policy2"
+            "ft_campanas ft_campanas . ."
+            "ft_copy    ft_copy ft_copy ft_copy";
+        grid-template-rows: 
+            100px
+            50px
+            200px
+            200px
+            150px
+            50px;
+        grid-template-columns: 20% 20% 20% 15%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ft__subscription {
+        justify-content: center;
+    }
+
+    .ft__subs__text, .ft__subs__reg {
+        width: 80%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .hd__logo {
+        width: 50%;
+        order: 1;
+    }
+    
+    .hd__search {
+        width: 100%;
+        order: 3;
+    }
+    
+    .hd__icons {
+        width: 50%;
+        order: 2;
+    }
+
+
+    .hd__category {
+        width: 50%;
+        order: 1;
+    }
+    
+    .hd__offer {
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px 20px;
+        order: 3;
+    }
+    
+    .hd__delivery {
+        width: 50%;
+        order: 2;
+    }
+
+
+    .mn__catalogue {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .mn__catalogue--4 {
+        grid-row-start: span 1;
+    }
+    
+    .mn__catalogue--5 {
+        grid-row-start: span 1;
+    }
+    
+    .mn__catalogue--6 {
+        grid-column-start: span 1;
+    }
+    
+    .mn__catalogue--8 {
+        grid-column-start: span 1;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .hd__offer li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 5px 0;
+    }
+
+    .mn__catalogue {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .mn__catalogue--4 {
+        grid-row-start: span 1;
+    }
+    
+    .mn__catalogue--5 {
+        grid-row-start: span 1;
+    }
+    
+    .mn__catalogue--6 {
+        grid-column-start: span 1;
+    }
+    
+    .mn__catalogue--8 {
+        grid-column-start: span 1;
+    }
+
+}
