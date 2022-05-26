@@ -5,195 +5,275 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce - Suscripcion</title>
-    <!-- icono de la pestaña de la pagina -->
-    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-    <!-- link para iconos de font awesome -->
-    <script src="https://kit.fontawesome.com/b0b76e0ed2.js" crossorigin="anonymous"></script>
-    <!-- link para hoja de estilos -->
+    <title>Yolo.pe</title>
+    <!-- favicon para la pestaña de la página -->
+    <link rel="shortcut icon" href="../img/logo-yolo-icono.png" type="image/x-icon">
+    <!-- link de la hoja de estilos -->
     <link rel="stylesheet" href="../css/style.css">
-    <!-- link para hoja de estilos adaptativo -->
+    <!-- link de la hoja de estilos adaptativos -->
     <link rel="stylesheet" href="../css/responsive.css">
+    <!-- link CSS bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- link de la hoja de estilos para modificar CSS de bootstrap -->
+    <link rel="stylesheet" href="../css/style_bootstrap.css">
 </head>
 
 <body>
-    <div class="pg">
-        <!-- ENCABEZADO -->
-        <header class="hd">
-            <div class="hd__container">
-                <div class="hd__container__first">
-                    <a href="../index.html" class="hd__logo hd__first--items">
-                        <img src="../img/logo-2.png" alt="E-Commerce">
+    <!-- ENCABEZADO -->
+    <header class="hd p-1 bg-dark text-white">
+        <div class="hd__container container">
+            <div class="hd__logo d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="../index.html"
+                    class="d-flex col-3 col-lg-3 align-items-center mb-2 mb-lg-0 text-white text-decoration-none order-1">
+                    <img class="bi me-2" height="50" src="../img/logo-yolo-blanco-min.png" alt="yolo.pe">
+                </a>
+                <form class="hd__search col-12 col-lg-6 mb-3 mb-lg-0 d-flex order-3 order-lg-2" role="search">
+                    <input type="search" class="form-control" placeholder="Busca tu producto aquí..."
+                        aria-label="Search">
+                    <button class="btn btn-primary">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <ul class="hd__icons nav col-9 col-lg-3 mb-2 justify-content-end mb-md-0 order-2 order-lg-3">
+                    <li>
+                        <a href="./myaccount.html" class="nav-link px-2 text-white">
+                            <i class="fa-solid fa-user bi d-block mx-auto mb-1"></i>
+                            Mi cuenta
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./cart.html" class="nav-link px-2 text-white">
+                            <i class="fa-solid fa-cart-shopping bi d-block mx-auto mb-1"></i>
+                            Mi carrito
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- CUERPO -->
+    <main class="mn">
+        <div class="mn__subs__title">
+            <span>
+                <h1>GRACIAS POR SUSCRIBIRTE. TE MOSTRAMOS LOS CATALOGOS DE LA SEMANA</h1>
+            </span>
+        </div>
+        <!-- catalogo bootstrap -->
+        <div class="container mb-3">
+            <div class="d-flex flex-wrap align-items-center justify-content-center">
+                <!-- img1 -->
+                <div class="card">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#img1">
+                        <img src="../img/c1.jpg" alt="reloj" class="card-img-top img-fluid">
                     </a>
-                    <div class="hd__search hd__first--items">
-                        <input type="text" placeholder="Busca tu producto aquí...">
-                        <button>
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </div>
-                    <div class="hd__icons hd__first--items">
-                        <a href="./myaccount.html" class="hd__icons--i">
-                            <i class="fa-solid fa-user"></i>
-                        </a>
-                        <a href="./cart.html" class="hd__icons--i">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </a>
+                </div>
+                <!-- Modal1 -->
+                <div class="modal fade" id="img1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <img src="../img/c1.jpg" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="hd__container_line"></div>
-                <nav class="hd__container__second">
-                    <div class="hd__category hd__second--items">
-                        <a href="./categories.html">
-                            <i class="fa-solid fa-bars"></i>
-                            <span>Categorías</span>
-                        </a>
-                    </div>
-                    <ul class="hd__offer hd__second--items">
-                        <li>
-                            <a href="./offer.html">
-                                <i class="fa-solid fa-desktop"></i>
-                                <span>Ofertas Tecnología</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./offer.html">
-                                <i class="fa-solid fa-shirt"></i>
-                                <span>Ofertas Polos</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./offer.html">
-                                <i class="fa-solid fa-gamepad"></i>
-                                <span>Ofertas Videojuegos</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="hd__delivery hd__second--items">
-                        <li>
-                            <a href="./offer.html">
-                                <i class="fa-solid fa-truck"></i>
-                                <span>Delivery gratis</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-        <!-- CUERPO -->
-        <main class="mn">
-            <div class="mn__subs__title">
-                <span>
-                    <h1>GRACIAS POR SUSCRIBIRTE. TE MOSTRAMOS LOS CATALOGOS DE LA SEMANA</h1>
-                </span>
-            </div>
-            <div class="mn__container">
-                <section class="mn__catalogue mn__container--items">
-                    <div class="mn__catalogue--1 mn__catalogue--items">
-                        <img src="../img/c1.jpg" alt="">
-                    </div>
-                    <div class="mn__catalogue--2 mn__catalogue--items">
-                        <img src="../img/c2.jpg" alt="">
-                    </div>
-                    <div class="mn__catalogue--3 mn__catalogue--items">
-                        <img src="../img/c3.jpg" alt="">
-                    </div>
-                    <div class="mn__catalogue--4 mn__catalogue--items">
-                        <img src="../img/c4.jpg" alt="">
-                    </div>
-                    <div class="mn__catalogue--5 mn__catalogue--items">
-                        <img src="../img/c5.jpg" alt="">
-                    </div>
-                    <div class="mn__catalogue--6 mn__catalogue--items">
-                        <img src="../img/c6.jpg" alt="">
-                    </div>
-                    <div class="mn__catalogue--7 mn__catalogue--items">
-                        <img src="../img/c7.jpg" alt="">
-                    </div>
-                    <div class="mn__catalogue--8 mn__catalogue--items">
-                        <img src="../img/c8.jpg" alt="">
-                    </div>
-                </section>
-            </div>
-        </main>
-
-        <!-- PIE -->
-        <footer class="ft">
-            <div class="ft__container">
-                <div class="ft__container__first">
-                    <div class="ft__subscription">
-                        <div class="ft__subs__text">
-                            <span>¡Suscribete al boletín semanal y obtén un descuento de S/. 20 en tu compra!</span>
-                        </div>
-                        <form class="ft__subs__reg" action="./subscription.html">
-                            <input type="text" placeholder="Regístrate con tu email">
-                            <button type="submit">Suscribete</button>
-                        </form>
-                    </div>
-                    <a href="../index.html" class="ft__logo">
-                        <img src="../img/logo-2.png" alt="E-Commerce">
+                <!-- img2 -->
+                <div class="card">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#img2">
+                        <img src="../img/c2.jpg" alt="reloj" class="card-img-top img-fluid">
                     </a>
-                    <div class="ft__info">
-                        <div class="ft__info--list">
-                            <h4>acerca de E-Commerce</h4>
-                            <ul>
-                                <li><a href="#">Sobre nosotros</a></li>
-                                <li><a href="#">Novedades</a></li>
-                                <li><a href="#">Lo más popular</a></li>
-                                <li><a href="#">Trabaja con nosotros</a></li>
-                            </ul>
+                </div>
+                <!-- Modal2 -->
+                <div class="modal fade" id="img2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <img src="../img/c2.jpg" alt="">
                         </div>
                     </div>
-                    <div class="ft__rrss">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-discord"></i>
-                        <i class="fa-brands fa-tiktok"></i>
-                        <i class="fa-brands fa-youtube"></i>
-                    </div>
-                    <div class="ft__policy1">
-                        <div class="ft__policy1--list">
-                            <h4>legal</h4>
-                            <ul>
-                                <li><a href="#">Términos de uso</a></li>
-                                <li><a href="#">Condiciones de entrega</a></li>
-                                <li><a href="#">Protección de datos</a></li>
-                                <li><a href="#">Política de cookies</a></li>
-                                <li><a href="#">Legales</a></li>
-                            </ul>
+                </div>
+                <!-- Modal1 -->
+                <div class="modal fade" id="img" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <img src="../img/c1.jpg" alt="">
                         </div>
                     </div>
-                    <div class="ft__policy2">
-                        <div class="ft__policy2--list">
-                            <h4>atencion al cliente</h4>
-                            <ul>
-                                <li><a href="#">Preguntas frecuentes</a></li>
-                                <li><a href="#">Contacto</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Trabaja con nosotros</a></li>
-                                <li><a href="#">Soporte</a></li>
-                            </ul>
+                </div>
+                <!-- img3 -->
+                <div class="card">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#img3">
+                        <img src="../img/c3.jpg" alt="reloj" class="card-img-top img-fluid">
+                    </a>
+                </div>
+                <!-- Modal3 -->
+                <div class="modal fade" id="img3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <img src="../img/c3.jpg" alt="">
                         </div>
                     </div>
-                    <div class="ft__campanas">
-                        <div class="ft__campanas--list">
-                            <h4>campañas</h4>
-                            <ul>
-                                <li><a href="#">Días Cyber</a></li>
-                                <li><a href="#">Días de locura</a></li>
-                                <li><a href="#">Black Friday</a></li>
-                                <li><a href="#">Devolución 20%</a></li>
-                            </ul>
+                </div>
+                <!-- img4 -->
+                <div class="card">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#img4">
+                        <img src="../img/c4.jpg" alt="reloj" class="card-img-top img-fluid">
+                    </a>
+                </div>
+                <!-- Modal4 -->
+                <div class="modal fade" id="img4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <img src="../img/c4.jpg" alt="">
                         </div>
                     </div>
-                    <div class="ft__copy">
-                        <span>2022 E-Commerce | Todos los derechos reservados.</span>
+                </div>
+                <!-- img5 -->
+                <div class="card">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#img5">
+                        <img src="../img/c5.jpg" alt="reloj" class="card-img-top img-fluid">
+                    </a>
+                </div>
+                <!-- Modal5 -->
+                <div class="modal fade" id="img5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <img src="../img/c5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- img6 -->
+                <div class="card">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#img6">
+                        <img src="../img/c6.jpg" alt="reloj" class="card-img-top img-fluid">
+                    </a>
+                </div>
+                <!-- Modal6 -->
+                <div class="modal fade" id="img6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <img src="../img/c6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- img7 -->
+                <div class="card">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#img7">
+                        <img src="../img/c7.jpg" alt="reloj" class="card-img-top img-fluid">
+                    </a>
+                </div>
+                <!-- Modal7 -->
+                <div class="modal fade" id="img7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <img src="../img/c7.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- img8 -->
+                <div class="card">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#img8">
+                        <img src="../img/c8.jpg" alt="reloj" class="card-img-top img-fluid">
+                    </a>
+                </div>
+                <!-- Modal8 -->
+                <div class="modal fade" id="img8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <img src="../img/c8.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- img9 -->
+                <div class="card">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#img9">
+                        <img src="../img/c9.jpg" alt="reloj" class="card-img-top img-fluid">
+                    </a>
+                </div>
+                <!-- Modal9 -->
+                <div class="modal fade" id="img9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <img src="../img/c9.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </main>
+
+    <!-- PIE -->
+    <footer class="ft">
+        <div class="ft__container">
+            <div class="ft__sub--text ft__grid__area">
+                <span>¡Suscribete al boletín semanal y obtén un descuento de S/. 20 en tu compra!</span>
+            </div>
+            <form class="ft__sub--mail ft__grid__area" action="./subscription.html">
+                <input type="text" placeholder="Regístrate con tu email">
+                <button type="submit">Suscribete</button>
+            </form>
+            <a href="../index.html" class="ft__logo ft__grid__area">
+                <img src="../img/logo-yolo-blanco-min.png" alt="E-Commerce">
+            </a>
+            <nav class="ft__rrss ft__grid__area">
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-discord"></i></li>
+                    <li><i class="fa-brands fa-tiktok"></i></li>
+                    <li><i class="fa-brands fa-youtube"></i></li>
+                </ul>
+            </nav>
+            <nav class="ft__info1 ft__grid__area">
+                <h4>acerca de E-Commerce</h4>
+                <ul>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Novedades</a></li>
+                    <li><a href="#">Lo más popular</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                </ul>
+            </nav>
+            <nav class="ft__info2 ft__grid__area">
+                <h4>legal</h4>
+                <ul>
+                    <li><a href="#">Términos de uso</a></li>
+                    <li><a href="#">Condiciones de entrega</a></li>
+                    <li><a href="#">Protección de datos</a></li>
+                    <li><a href="#">Política de cookies</a></li>
+                    <li><a href="#">Legales</a></li>
+                </ul>
+            </nav>
+            <nav class="ft__info3 ft__grid__area">
+                <h4>atencion al cliente</h4>
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                    <li><a href="#">Soporte</a></li>
+                </ul>
+            </nav>
+            <nav class="ft__info4 ft__grid__area">
+                <h4>campañas</h4>
+                <ul>
+                    <li><a href="#">Días Cyber</a></li>
+                    <li><a href="#">Días de locura</a></li>
+                    <li><a href="#">Black Friday</a></li>
+                    <li><a href="#">Devolución 20%</a></li>
+                </ul>
+            </nav>
+            <div class="ft__copy ft__grid__area">
+                <span>&copy 2022 E-Commerce | Todos los derechos reservados.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- link para iconos de fontawesome -->
+    <script src="https://kit.fontawesome.com/b0b76e0ed2.js" crossorigin="anonymous"></script>
+    <!-- link JavaScript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
