@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yolo.pe</title>
     <!-- favicon para la pestaña de la página -->
-    <link rel="shortcut icon" href="./img/logo-yolo-icono.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/logo-icono-yolo.png" type="image/x-icon">
     <!-- link de la hoja de estilos -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- link de la hoja de estilos adaptativos -->
@@ -17,6 +17,8 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- link de la hoja de estilos para modificar CSS de bootstrap -->
     <link rel="stylesheet" href="./css/style_bootstrap.css">
+    <!-- link de la hoja de estilos para animaciones -->
+    <link rel="stylesheet" href="./css/animaciones.css">
 </head>
 
 <body>
@@ -26,7 +28,7 @@
             <div class="hd__logo d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="#"
                     class="d-flex col-3 col-lg-3 align-items-center mb-2 mb-lg-0 text-white text-decoration-none order-1">
-                    <img class="bi me-2" height="50" src="./img/logo-yolo-blanco-min.png" alt="yolo.pe">
+                    <img class="bi me-2" height="40" src="./img/logo-yolo-blanco-min.png" alt="yolo.pe">
                 </a>
                 <form class="hd__search col-12 col-lg-6 mb-3 mb-lg-0 d-flex order-3 order-lg-2" role="search">
                     <input type="search" class="form-control" placeholder="Busca tu producto aquí..."
@@ -83,7 +85,7 @@
         </div>
 
         <!-- productos top -->
-        <section class="mn__top mn__container--items">
+        <section class="mn__top mn__container--items container">
             <div class="mn__top__title">
                 <h1>productos más vendidos</h1>
             </div>
@@ -108,156 +110,46 @@
         </section>
 
         <!-- publicidad -->
-        <section class="mn__banner mn__container--items">
+        <section class="mn__banner mn__container--items container">
             <a href="./pages/offer.html">
                 <img src="./img/banner-2.jpg" alt="descuento">
             </a>
         </section>
 
-        <!-- catalogo bootstrap -->
+        <!-- catalogo grid -->
         <div class="container mb-3">
-            <div class="d-flex flex-wrap align-items-center justify-content-center">
-                <!-- img1 -->
-                <div class="card">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#img1">
-                        <img src="./img/c1.jpg" alt="reloj" class="card-img-top img-fluid">
-                    </a>
+            <section class="mn__catalogue mn__container--items">
+                <div class="mn__catalogue--1 mn__catalogue--items">
+                    <img src="./img/c1.jpg" alt="">
                 </div>
-                <!-- Modal1 -->
-                <div class="modal fade" id="img1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <img src="./img/c1.jpg" alt="">
-                        </div>
-                    </div>
+                <div class="mn__catalogue--2 mn__catalogue--items">
+                    <img src="./img/c2.jpg" alt="">
                 </div>
-                <!-- img2 -->
-                <div class="card">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#img2">
-                        <img src="./img/c2.jpg" alt="reloj" class="card-img-top img-fluid">
-                    </a>
+                <div class="mn__catalogue--3 mn__catalogue--items">
+                    <img src="./img/c3.jpg" alt="">
                 </div>
-                <!-- Modal2 -->
-                <div class="modal fade" id="img2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <img src="./img/c2.jpg" alt="">
-                        </div>
-                    </div>
+                <div class="mn__catalogue--4 mn__catalogue--items">
+                    <img src="./img/c4.jpg" alt="">
                 </div>
-                <!-- Modal1 -->
-                <div class="modal fade" id="img" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <img src="./img/c1.jpg" alt="">
-                        </div>
-                    </div>
+                <div class="mn__catalogue--5 mn__catalogue--items">
+                    <img src="./img/c5.jpg" alt="">
                 </div>
-                <!-- img3 -->
-                <div class="card">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#img3">
-                        <img src="./img/c3.jpg" alt="reloj" class="card-img-top img-fluid">
-                    </a>
+                <div class="mn__catalogue--6 mn__catalogue--items">
+                    <img src="./img/c6.jpg" alt="">
                 </div>
-                <!-- Modal3 -->
-                <div class="modal fade" id="img3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <img src="./img/c3.jpg" alt="">
-                        </div>
-                    </div>
+                <div class="mn__catalogue--7 mn__catalogue--items">
+                    <img src="./img/c7.jpg" alt="">
                 </div>
-                <!-- img4 -->
-                <div class="card">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#img4">
-                        <img src="./img/c4.jpg" alt="reloj" class="card-img-top img-fluid">
-                    </a>
+                <div class="mn__catalogue--8 mn__catalogue--items">
+                    <img src="./img/c8.jpg" alt="">
                 </div>
-                <!-- Modal4 -->
-                <div class="modal fade" id="img4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <img src="./img/c4.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- img5 -->
-                <div class="card">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#img5">
-                        <img src="./img/c5.jpg" alt="reloj" class="card-img-top img-fluid">
-                    </a>
-                </div>
-                <!-- Modal5 -->
-                <div class="modal fade" id="img5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <img src="./img/c5.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- img6 -->
-                <div class="card">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#img6">
-                        <img src="./img/c6.jpg" alt="reloj" class="card-img-top img-fluid">
-                    </a>
-                </div>
-                <!-- Modal6 -->
-                <div class="modal fade" id="img6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <img src="./img/c6.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- img7 -->
-                <div class="card">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#img7">
-                        <img src="./img/c7.jpg" alt="reloj" class="card-img-top img-fluid">
-                    </a>
-                </div>
-                <!-- Modal7 -->
-                <div class="modal fade" id="img7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <img src="./img/c7.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- img8 -->
-                <div class="card">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#img8">
-                        <img src="./img/c8.jpg" alt="reloj" class="card-img-top img-fluid">
-                    </a>
-                </div>
-                <!-- Modal8 -->
-                <div class="modal fade" id="img8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <img src="./img/c8.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- img9 -->
-                <div class="card">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#img9">
-                        <img src="./img/c9.jpg" alt="reloj" class="card-img-top img-fluid">
-                    </a>
-                </div>
-                <!-- Modal9 -->
-                <div class="modal fade" id="img9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <img src="./img/c9.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </section>
         </div>
     </main>
 
     <!-- PIE -->
     <footer class="ft">
-        <div class="ft__container">
+        <div class="ft__container container">
             <div class="ft__sub--text ft__grid__area">
                 <span>¡Suscribete al boletín semanal y obtén un descuento de S/. 20 en tu compra!</span>
             </div>

@@ -11,7 +11,7 @@
 
 html {
     height: 100%;
-    min-width: 330px;
+    min-width: 320px;
 }
 
 /* ****************************** */
@@ -229,6 +229,10 @@ body {
     letter-spacing: 1.5px;
 }
 
+.mn__top__title h1 {
+    font-size: 20px;
+}
+
 .mn__top__line {
     width: 100%;
     border-bottom: 3px solid #ccc;
@@ -266,6 +270,57 @@ body {
     object-fit: cover;
 }
 
+/* grid catálogo */
+.mn__catalogue {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 250px;
+    padding: 5px;
+    gap: 5px;
+    margin-bottom: 0;
+}
+
+/* porpiedades en común de los catálogos */
+.mn__catalogue--items {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+/* ajustar tamaño de imagen */
+.mn__catalogue img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* cuadrando imagenes para mejorar vista */
+.mn__catalogue--4 {
+    grid-row-start: span 2;
+}
+
+.mn__catalogue--5 {
+    grid-row-start: span 2;
+}
+
+.mn__catalogue--6 {
+    grid-column-start: span 2;
+}
+
+.mn__catalogue--8 {
+    grid-column-start: span 2;
+}
+
+/* tamaño mínimo del carrusel */
+.carousel-item img {
+    min-height: 200px;
+    object-fit: cover;
+}
+
+/* tamaño mínimo del banner */
+.mn__banner img {
+    min-height: 100px;
+    object-fit: cover;
+}
 
 /* **************************************** */
 /*                   CART                   */
@@ -282,6 +337,10 @@ body {
     padding-bottom: 2px;
     border-bottom: 2px solid #ccc;
     font-size: .8rem;
+}
+
+.mn__cart__title h1 {
+    font-size: 22px;
 }
 
 /* formato para tabla */
@@ -306,6 +365,16 @@ body {
     border-bottom: 2px solid #ccc;;
     background-color: #1273eb;
     color: #fff;
+    padding-top: 12px;
+}
+
+.mn__cart__tbl h3 {
+    font-size: 14px;
+}
+
+.mn__cart__tbl tr td {
+    font-size: 14px;
+    padding: 5px 0;
 }
 
 /* formato para botones */
@@ -320,27 +389,35 @@ body {
     height: 50px;
 }
 
+.mn__cart__btn button {
+    min-width: 80px;
+}
+
+.mn__cart__btn {
+    font-size: 12px;
+}
+
 .mn__cart__coupon {
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: flex-start;
 }
 
 .mn__cart__update {
-    width: 30%;
+    width: 25%;
     display: flex;
     justify-content: center;
 }
 
 .mn__cart__checkout {
-    width: 30%;
+    width: 25%;
     display: flex;
     justify-content: flex-end;
 }
 
 /* propiedades del input y los botones */
 .mn__cart__coupon--code {
-    width: 70%;
+    width: 60%;
     height: 100%;
 }
 
@@ -379,7 +456,7 @@ body {
 /* título del carrito */
 .mn__acc__title {
     max-width: 1180px;
-    min-width: 380px;
+    min-width: 300px;
     width: 100%;
     margin: 0 auto;
     margin-top: 15px;
@@ -387,6 +464,10 @@ body {
     padding-bottom: 2px;
     border-bottom: 2px solid #ccc;
     font-size: .8rem;
+}
+
+.mn__acc__title h1 {
+    font-size: 22px;
 }
 
 /* formato del login */
@@ -402,9 +483,10 @@ body {
     justify-content: center;
 }
 
-.mn__acc__login span {
+.mn__acc__login>span {
     width: 100%;
     margin: 10px 0;
+    min-width: 300px;
 }
 
 .mn__acc__login span  h2 {
@@ -421,6 +503,7 @@ body {
 
 .mn__acc__input {
     width: 100%;
+    min-width: 300px;
     height: 40px;
     margin: 0 30%;
 }
@@ -487,6 +570,10 @@ body {
     font-size: .8rem;
 }
 
+.mn__off__title h1 {
+    font-size: 22px;
+}
+
 /* **************************************** */
 /*               SUSCRIPCION                */
 /* **************************************** */
@@ -501,4 +588,8 @@ body {
     padding-bottom: 2px;
     border-bottom: 2px solid #ccc;
     font-size: .8rem;
+}
+
+.mn__subs__title h1 {
+    font-size: 22px;
 }
