@@ -1,327 +1,3 @@
-/* importar fuentes de google fonts */
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap'); */
-
-/* formateo de página */
-* {
-    /* font-family: 'Open Sans', sans-serif; */
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    height: 100%;
-    min-width: 320px;
-}
-
-/* ****************************** */
-/*        ESTRUCTURA GRID         */
-/* ****************************** */
-
-body {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
-
-/* ****************************** */
-/*             FOOTER             */
-/* ****************************** */
-
-/* color de fondo y ancho de pie de página */
-.ft {
-    width: 100%;
-    background-color: #1d262d;
-}
-
-/* aplicando grid areas */
-.ft__container {
-    max-width: 1180px;
-    min-width: 300px;
-    margin: 0 auto;
-    display: grid;
-    /* grid-template-areas: 
-        "sub--text  sub--text   sub--text   sub--mail"
-        "logo       rrss        rrss        rrss"
-        "info1      info2       info3       info4"
-        "copy       copy        copy        copy"; */
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(4,auto);
-    padding: 0 5px;
-}
-
-/* asignando areas a los grid items */
-.ft__sub--text {
-    /* grid-area: sub--text; */
-    grid-column: 1 / 9;
-    grid-row: 1 / 2;
-    font-size: .9rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #dcdedf;
-    padding-left: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-.ft__sub--mail {
-    /* grid-area: sub--mail; */
-    grid-column: 9 / 13;
-    grid-row: 1 / 2;
-    padding-right: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-.ft__logo {
-    /* grid-area: logo; */
-    grid-column: 1 / 5;
-    grid-row: 2 / 3;
-}
-
-.ft__rrss {
-    /* grid-area: rrss; */
-    grid-column: 5 / 13;
-    grid-row: 2 / 3;
-}
-
-.ft__info1 {
-    /* grid-area: info1; */
-    grid-column: 1 / 4;
-    grid-row: 3 / 4;
-    border-bottom: 1px solid #ccc;
-}
-
-.ft__info2 {
-    /* grid-area: info2; */
-    grid-column: 4 / 7;
-    grid-row: 3 / 4;
-    border-bottom: 1px solid #ccc;
-}
-
-.ft__info3 {
-    /* grid-area: info3; */
-    grid-column: 7 / 10;
-    grid-row: 3 / 4;
-    border-bottom: 1px solid #ccc;
-}
-
-.ft__info4 {
-    /* grid-area: info4; */
-    grid-column: 10 / 13;
-    grid-row: 3 / 4;
-    border-bottom: 1px solid #ccc;
-}
-
-.ft__copy {
-    /* grid-area: copy; */
-    grid-column: 1 / 13;
-    grid-row: 4 / 5;
-    font-size: 0.9rem;
-    color: #bac8d3;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-/* propiedades en común de los grid items */
-.ft__grid__area {
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-/* propiedades del input y buton de suscripción */
-.ft__grid__area input {
-    width: calc(100% - 100px);
-    height: 38px;
-    border-radius: 5px 0 0 5px;
-    border-style: none;
-    padding-left: 10px;
-}
-
-.ft__grid__area button {
-    width: 100px;
-    height: 38px;
-    border-radius: 0  5px 5px 0;
-    border-style: none;
-    font-size: .9rem;
-    background-color: #1273eb;
-    color: #fff;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-/* propiedades del logo del pie de página */
-.ft__logo img {
-    height: 50px;
-    padding-left: 10px;
-}
-
-/* propiedades de los iconos de rrss */
-.ft__rrss ul {
-    text-align: start;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    font-size: 1.2rem;
-    color: #fff;
-}
-
-/* propiedades de las listas de info */
-.ft__grid__area h4 {
-    width: 100%;
-    margin-bottom: 5px;
-    font-size: .9rem;
-    font-weight: bold;
-    color: #fff;
-    text-transform: uppercase;
-    padding-left: 20px;
-}
-
-.ft__info1 ul, .ft__info2 ul, .ft__info3 ul, .ft__info4 ul {
-    text-align: start;
-    list-style: none;
-    padding-left: 20px;
-}
-
-.ft__info1 a, .ft__info2 a, .ft__info3 a, .ft__info4 a {
-    text-decoration: none;
-    color: #869fb2;
-    font-size: .9rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.ft__copy span {
-    padding-left: 10px;
-}
-
-
-/* **************************************** */
-/*                   MAIN                   */
-/* **************************************** */
-
-/* propiedades en comun de las secciones */
-.mn__container--items {
-    width: 100%;
-    max-width: 1180px;
-    min-width: 380px;
-    margin: 0 auto;
-    margin-bottom: 15px;
-}
-
-/* sección productos top */
-.mn__top {
-    padding: 10px;
-    background-color: #f4f7f9;
-}
-
-/* propiedades de los items de la sección top */
-.mn__top__title {
-    width: 100%;
-    margin: 5px 0;
-    color: #003366;
-    font-size: .8rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-}
-
-.mn__top__title h1 {
-    font-size: 20px;
-}
-
-.mn__top__line {
-    width: 100%;
-    border-bottom: 3px solid #ccc;
-    margin: 5px 0;
-}
-
-.mn__top__product {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 10px 0;
-    flex-wrap: wrap;
-}
-
-/* propiedades de los productos top */
-.mn__top__product--x {
-    width: 200px;
-    height: 200px;
-    padding: 5px;
-    border: 2px solid #ccc;
-    margin-bottom: 10px;
-}
-
-/* ajustando tamaño de imagenes de productos */
-.mn__top__product--x img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* ajustando tamaño de imagenesimagen de banner */
-.mn__banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* grid catálogo */
-.mn__catalogue {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-auto-rows: 250px;
-    padding: 5px;
-    gap: 5px;
-    margin-bottom: 0;
-}
-
-/* porpiedades en común de los catálogos */
-.mn__catalogue--items {
-    border: 1px solid #ccc;
-    padding: 5px;
-}
-
-/* ajustar tamaño de imagen */
-.mn__catalogue img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* cuadrando imagenes para mejorar vista */
-.mn__catalogue--4 {
-    grid-row-start: span 2;
-}
-
-.mn__catalogue--5 {
-    grid-row-start: span 2;
-}
-
-.mn__catalogue--6 {
-    grid-column-start: span 2;
-}
-
-.mn__catalogue--8 {
-    grid-column-start: span 2;
-}
-
-/* tamaño mínimo del carrusel */
-.carousel-item img {
-    min-height: 200px;
-    object-fit: cover;
-}
-
-/* tamaño mínimo del banner */
-.mn__banner img {
-    min-height: 100px;
-    object-fit: cover;
-}
-
 /* **************************************** */
 /*                   CART                   */
 /* **************************************** */
@@ -362,7 +38,8 @@ body {
 
 .mn__cart__tbl table th {
     padding: 5px;
-    border-bottom: 2px solid #ccc;;
+    border-bottom: 2px solid #ccc;
+    ;
     background-color: #1273eb;
     color: #fff;
     padding-top: 12px;
@@ -442,7 +119,8 @@ body {
     border: 1px solid #ccc;
 }
 
-.mn__cart__update button, .mn__cart__checkout button {
+.mn__cart__update button,
+.mn__cart__checkout button {
     width: 50%;
     height: 80%;
     border-radius: 5px;
@@ -489,7 +167,7 @@ body {
     min-width: 300px;
 }
 
-.mn__acc__login span  h2 {
+.mn__acc__login span h2 {
     text-align: center;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -533,6 +211,7 @@ body {
     width: 10%;
     text-align: center;
 }
+
 .mn__acc__opc--left span {
     width: 90%;
 }

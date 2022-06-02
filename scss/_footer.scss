@@ -1,0 +1,172 @@
+// color de fondo y ancho de pie de página
+.ft {
+    width: 100%;
+    background-color: $color-primary;
+    // aplicando grid 
+    .ft__container {
+        max-width: $max-width;
+        min-width: $min-width;
+        margin: 0 auto;
+        padding: 0 5px;
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(4,auto);
+        // propiedades en común de los grid items
+        .ft__grid__area {
+            padding: 10px 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            // propiedades de las listas de info
+            h4 {
+                width: 100%;
+                margin-bottom: 5px;
+                font-size: .9rem;
+                font-weight: bold;
+                color: #fff;
+                text-transform: uppercase;
+                padding-left: 20px;
+            }
+        }
+        // propiedades particulares de cada elemento
+        .ft__sub--text {
+            grid-column: 1 / 9;
+            grid-row: 1 / 2;
+            font-size: .9rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: $color-text;
+            padding-left: 10px;
+            border-bottom: $border;
+        }
+        .ft__sub--mail {
+            grid-column: 9 / 13;
+            grid-row: 1 / 2;
+            padding-right: 10px;
+            border-bottom: $border;
+            // propiedades del input y buton de suscripción
+            input {
+                width: calc(100% - 100px);
+                height: 38px;
+                border-radius: 5px 0 0 5px;
+                border-style: none;
+                padding-left: 10px;
+            }
+            button {
+                width: 100px;
+                height: 38px;
+                border-radius: 0  5px 5px 0;
+                border-style: none;
+                font-size: .9rem;
+                background-color: #1273eb;
+                color: #fff;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+        }
+        .ft__logo {
+            grid-column: 1 / 5;
+            grid-row: 2 / 3;
+            // propiedades del logo del pie de página
+            img {
+                height: 50px;
+                padding-left: 10px;
+            }
+        }
+        .ft__rrss {
+            grid-column: 5 / 13;
+            grid-row: 2 / 3;
+            // propiedades de los iconos de rrss
+            ul {
+                text-align: start;
+                list-style: none;
+                display: flex;
+                justify-content: space-evenly;
+                width: 100%;
+                font-size: 1.2rem;
+                color: #fff;
+            }
+        }
+        .ft__info1 {
+            grid-column: 1 / 4;
+            grid-row: 3 / 4;
+            border-bottom: $border;
+            ul {
+                text-align: start;
+                list-style: none;
+                padding-left: 20px;
+                a {
+                    text-decoration: none;
+                    color: $color-text-a;
+                    font-size: .9rem;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+        }
+        .ft__info2 {
+            grid-column: 4 / 7;
+            grid-row: 3 / 4;
+            border-bottom: $border;
+            ul {
+                text-align: start;
+                list-style: none;
+                padding-left: 20px;
+                a {
+                    text-decoration: none;
+                    color: $color-text-a;
+                    font-size: .9rem;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+        }
+        .ft__info3 {
+            grid-column: 7 / 10;
+            grid-row: 3 / 4;
+            border-bottom: $border;
+            ul {
+                text-align: start;
+                list-style: none;
+                padding-left: 20px;
+                a {
+                    text-decoration: none;
+                    color: $color-text-a;
+                    font-size: .9rem;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+        }
+        .ft__info4 {
+            grid-column: 10 / 13;
+            grid-row: 3 / 4;
+            border-bottom: $border;
+            ul {
+                text-align: start;
+                list-style: none;
+                padding-left: 20px;
+                a {
+                    text-decoration: none;
+                    color: $color-text-a;
+                    font-size: .9rem;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+        }
+        .ft__copy {
+            grid-column: 1 / 13;
+            grid-row: 4 / 5;
+            font-size: 0.9rem;
+            color: #bac8d3;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            span {
+                padding-left: 10px;
+            }
+        }
+    }
+}

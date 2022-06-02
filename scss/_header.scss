@@ -1,0 +1,10 @@
+.hd {
+    width: 100%;
+    background-color: $color-primary;
+    input {
+        border-radius: .375rem 0 0 .375rem;
+    }
+    button {
+        border-radius: 0 .375rem .375rem 0;
+    }
+}
