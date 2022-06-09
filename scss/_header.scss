@@ -1,5 +1,6 @@
 .hd {
-    width: 100%;
+    // width: 100%;
+    width: map-get($anchos , ancho);
     background-color: $color-primary;
     input {
         border-radius: .375rem 0 0 .375rem;

@@ -1,8 +1,11 @@
 // propiedades en comun de las secciones
 .mn__container--items {
-    width: 100%;
-    max-width: 1180px;
-    min-width: 380px;
+    // width: 100%;
+    // max-width: 1180px;
+    // min-width: 380px;
+    width: map-get($anchos , ancho);
+    max-width: map-get($anchos , maximo);
+    min-width: map-get($anchos , minimo);
     margin: 0 auto;
     margin-bottom: 15px;
     // sección productos top
@@ -11,7 +14,8 @@
         background-color: #f4f7f9;
     }
     .mn__top__title {
-        width: 100%;
+        // width: 100%;
+        width: map-get($anchos , ancho);
         margin: 5px 0;
         color: #003366;
         font-size: .8rem;
@@ -23,14 +27,19 @@
         }
     }
     .mn__top__line {
-        width: 100%;
-        border-bottom: 3px solid #ccc;
+        // width: 100%;
+        width: map-get($anchos , ancho);
+        // border-bottom: 3px solid #ccc;
+        @include border(3px);
         margin: 5px 0;
     }
     .mn__top__product {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
+        // width: 100%;
+        width: map-get($anchos , ancho);
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-evenly;
+        @include flex(space-evenly);
         margin: 10px 0;
         flex-wrap: wrap;
         // propiedades de los productos top
@@ -38,24 +47,9 @@
             width: 200px;
             height: 200px;
             padding: 5px;
-            border: 2px solid #ccc;
+            // border: 2px solid #ccc;
+            @include border(2px);
             margin-bottom: 10px;
-            // ajustando tamaño de imagenes de productos
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-    }
-    // ajustando tamaño de imagenesimagen de banner
-    &.mn__banner {
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            // tamaño mínimo del banner
-            min-height: 100px;
         }
     }
     // grid catálogo
@@ -68,11 +62,13 @@
         margin-bottom: 0;
         // porpiedades en común de los catálogos
         .mn__catalogue--items {
-            border: 1px solid #ccc;
+            // border: 1px solid #ccc;
+            @include border(1px);
             padding: 5px;
             // ajustar tamaño de imagen
             img {
-                width: 100%;
+                // width: 100%;
+                width: map-get($anchos , ancho);
                 height: 100%;
                 object-fit: cover;
             }
@@ -93,5 +89,26 @@
                 grid-column-start: span 2;
             }
         }
+    }
+}
+
+// ajustando tamaño de imagenes de productos
+.img__product {
+    // width: 100%;
+    width: map-get($anchos , ancho);
+    height: 100%;
+    object-fit: cover;
+}
+
+// ajustando tamaño de imagenesimagen de banner
+.mn__banner {
+    img {
+        // width: 100%;
+        // width: map-get($anchos , ancho);
+        // height: 100%;
+        // object-fit: cover;
+        @extend .img__product;
+        // tamaño mínimo del banner
+        min-height: 100px;
     }
 }

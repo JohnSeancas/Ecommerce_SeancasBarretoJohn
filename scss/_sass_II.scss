@@ -1,0 +1,17 @@
+// Mixins
+ @mixin flex($justify) {
+     display: flex;
+     align-items: center;
+     justify-content: $justify;
+ }
+
+ @mixin border($px) {
+     border: $px solid #ccc;
+ }
+
+// Maps
+$anchos :(
+    ancho: 100%,
+    maximo: 1180px,
+    minimo: 380px
+);
