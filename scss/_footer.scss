@@ -1,6 +1,5 @@
 // color de fondo y ancho de pie de página
 .ft {
-    // width: 100%;
     width: map-get($anchos , ancho);
     background-color: $color-primary;
     // aplicando grid 
@@ -15,14 +14,10 @@
         // propiedades en común de los grid items
         .ft__grid__area {
             padding: 10px 0;
-            // display: flex;
-            // align-items: center;
-            // justify-content: center;
             @include flex(center);
             flex-wrap: wrap;
             // propiedades de las listas de info
             h4 {
-                // width: 100%;
                 width: map-get($anchos , ancho);
                 margin-bottom: 5px;
                 font-size: .9rem;
@@ -85,9 +80,6 @@
             ul {
                 text-align: start;
                 list-style: none;
-                // display: flex;
-                // align-items: center;
-                // justify-content: space-evenly;
                 @include flex(space-evenly);
                 width: 100%;
                 font-size: 1.2rem;
@@ -167,9 +159,6 @@
             grid-row: 4 / 5;
             font-size: 0.9rem;
             color: #bac8d3;
-            // display: flex;
-            // align-items: center;
-            // justify-content: flex-start;
             @include flex(center);
             align-items: center;
             span {
